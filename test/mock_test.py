@@ -25,7 +25,7 @@ class MockTestMethods(unittest.TestCase):
         # self.assertFalse(mock_player.result())
         # print(mock_player.result())
 
-    # mock test the 
+    # mock test the round object
     @patch('builtins.input', return_value='<')
     def test_round(self, _input):
         player = Player()
@@ -34,9 +34,9 @@ class MockTestMethods(unittest.TestCase):
         with patch.object(round, '_cardset', new_callable=PropertyMock) as obj_mock:
             # assertFalse for wrong 
             with redirect_stdout(f):
-                obj_mock.get_player_card.return_value = Card('10', 'Spades')
-                obj_mock.get_house_card.return_value = Card('King', 'Hearts')
-                obj_mock.get_sign.return_value = True
+                obj_mock.player_card.return_value = Card('10', 'Spades')
+                obj_mock.house_card.return_value = Card('King', 'Hearts')
+                obj_mock.sign.return_value = True
                 round.start()
                 self.assertEqual("Starting round #1...\n"\
                     "The House's card is King Hearts\n"\
