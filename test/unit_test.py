@@ -9,7 +9,6 @@ sys.path.append(SRC)
 from match import Match
 from entity import Player
 
-
 class UnitTestMethods(unittest.TestCase):
     def testWinCondition(self):
         player = Player()
@@ -30,9 +29,8 @@ class UnitTestMethods(unittest.TestCase):
             player = Player()
             match = Match(player)
             match.start()
-        print("test output is", f.getvalue())
+        # print("test output is", f.getvalue())
         self.assertEqual("You currently have 60 points.\n", f.getvalue())
 
 if __name__ == "__main__":
     unittest.main()
-    

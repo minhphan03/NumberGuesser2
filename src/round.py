@@ -13,9 +13,8 @@ class Round:
         self._roundNumber = 1
     
     def start(self):
-        p_card, h_card, sign = self._cardset.get_cards()
-        self._player.set_card(p_card)
-        self._house.set_card(h_card)
+        self._player.set_card(self._cardset.get_player_card())
+        self._house.set_card(self._cardset.get_house_card())
         print(f'Starting round #{self._roundNumber}...')
         print("The House's card is " + str(self._house.get_card()))
         prompt = "Type your guess: '>' for greater value and '<' otherwise: "
@@ -30,7 +29,7 @@ class Round:
                 print(e)
      
         print("Your card is " + str(self._player.get_card()))      
-        if self.result(guess, sign):
+        if self.result(guess):
             print("You won this round!")
             while True:
                 try:
@@ -45,16 +44,16 @@ class Round:
             if nextRound == 'Y':
                 self._multi +=1
                 self._roundNumber +=1
+                # start another round
                 self.start()
                 # print statement
             else:
                 # add points
                 self._player.set_score(self._player.get_score() + 20*(2**self._multi))
-                return
         else:
             print("Sorry, you've lost this match!")
-            return
         
-    def result(self, guess, sign: bool):
+    def result(self, guess):
+        sign = self._cardset.get_sign()
         return (guess == '>' and sign) \
             or (guess == '<' and not sign)
