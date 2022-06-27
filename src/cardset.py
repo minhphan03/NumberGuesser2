@@ -1,5 +1,5 @@
 from card import Card
-from config import *
+from config import SPECIALS, SUITS, GROUPS
 import random
 
 class CardSet:
@@ -16,11 +16,14 @@ class CardSet:
     def isGreater(self, card1: Card, card2: Card) -> bool:
         return self._cards.index(card1) > self._cards.index(card2)
     
-    def get_player_card(self) -> Card:
+    @property
+    def player_card(self) -> Card:
         return self._player
     
-    def get_house_card(self) -> Card:
+    @property
+    def house_card(self) -> Card:
         return self._house
     
-    def get_sign(self) -> Card:
+    @property
+    def sign(self) -> Card:
         return self._sign

@@ -13,10 +13,10 @@ class Round:
         self._roundNumber = 1
     
     def start(self):
-        self._player.set_card(self._cardset.get_player_card())
-        self._house.set_card(self._cardset.get_house_card())
+        self._player.card = self._cardset.player_card
+        self._house.card = self._cardset.house_card
         print(f'Starting round #{self._roundNumber}...')
-        print("The House's card is " + str(self._house.get_card()))
+        print("The House's card is " + str(self._house.card))
         prompt = "Type your guess: '>' for greater value and '<' otherwise: "
         
         while True:
@@ -28,7 +28,7 @@ class Round:
             except InvalidGuessChoice as e:
                 print(e)
      
-        print("Your card is " + str(self._player.get_card()))      
+        print("Your card is " + str(self._player.card))      
         if self.result(guess):
             print("You won this round!")
             while True:
@@ -49,11 +49,11 @@ class Round:
                 # print statement
             else:
                 # add points
-                self._player.set_score(self._player.get_score() + 20*(2**self._multi))
+                self._player.score = self._player.score + 20*(2**self._multi)
         else:
             print("Sorry, you've lost this match!")
         
     def result(self, guess):
-        sign = self._cardset.get_sign()
+        sign = self._cardset.sign
         return (guess == '>' and sign) \
             or (guess == '<' and not sign)

@@ -7,7 +7,7 @@ def new_game():
     match = Match(player)
     match.isPlaying = True
     while match.result() == 0:
-        player.set_score(player.get_score()-25)
+        player.score = player.score-25
         match.start()
     if match.result() == 1:
         print("You win!")

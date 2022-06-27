@@ -8,7 +8,7 @@ class Match:
         self.isPlaying = False
 
     def start(self):
-        print("You currently have " + str(self._player.get_score()) + " points.")
+        print("You currently have " + str(self._player.score) + " points.")
         round = Round(self._player)
         self._match +=1
         if self.isPlaying:
@@ -16,9 +16,9 @@ class Match:
             round.start()
     
     def result(self) -> int:
-        if self._player.get_score() >= 1000:
+        if self._player.score >= 1000:
             return 1
-        elif self._player.get_score() < 25:
+        elif self._player.score < 25:
             return -1
         else:
             return 0

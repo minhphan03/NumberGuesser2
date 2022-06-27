@@ -1,16 +1,18 @@
 import random
 from card import Card
 
+
 class Entity:
     def __init__(self) -> None:
         self._card = None
-    
-    def set_card(self, card:Card):
-        self._card = card
 
-    def get_card(self) -> Card:
+    @property
+    def card(self) -> Card:
         return self._card
-
+    
+    @card.setter
+    def card(self, card:Card):
+        self._card = card
 
 class House(Entity):
     def __init__(self) -> None:
@@ -34,10 +36,12 @@ class Player(Entity):
             return True
         else:
             return False
-
-    def get_score(self) -> int:
+    
+    @property
+    def score(self) -> int:
         return self._score
     
-    def set_score(self, new_score: int):
+    @score.setter
+    def score(self, new_score: int):
         self._score = new_score
     
