@@ -8,7 +8,7 @@ class Match:
         self.isPlaying = False
 
     def start(self):
-        print("You currently have " + str(self._player.score) + " points.")
+        print(f"Player {self._player.name} currently have " + str(self._player.score) + " points.")
         round = Round(self._player)
         self._match +=1
         if self.isPlaying:

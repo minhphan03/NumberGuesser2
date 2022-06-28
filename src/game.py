@@ -12,14 +12,14 @@ class Game:
             player.score = player.score-25
             match.start()
         if match.result() == 1:
-            print("You win!")
+            print(f'{player.name} is a winner!')
         if match.result() == -1:
-            print("Sorry you've lost")
+            print(f"{player.name} lost this game :(")
 
     def create_player(self) -> Player:
         while True:
             try:
-                prompt = "Show card as graphic? (Y/N)"
+                prompt = "Show card as graphic? (Y/N) "
                 showGraphics = input(prompt).strip().capitalize()
                 if showGraphics not in ['Y', 'N']:
                     raise InvalidContinueChoice(showGraphics)
@@ -30,7 +30,7 @@ class Game:
         
         while True:
             try:
-                prompt = "Enter a name for this player (Yonly alphanumeric characters allowed): "
+                prompt = "Enter a name for this player (Only alphanumeric characters allowed): "
                 name = input(prompt).strip()
                 if name == "":
                     break

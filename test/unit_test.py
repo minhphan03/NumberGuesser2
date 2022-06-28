@@ -9,6 +9,7 @@ sys.path.append(SRC)
 
 from match import Match
 from entity import Player
+from card import Card, GraphicDecorator
 
 class UnitTestMethods(unittest.TestCase):
     def testWinCondition(self):
@@ -31,9 +32,20 @@ class UnitTestMethods(unittest.TestCase):
             match = Match(player)
             match.start()
         # print("test output is", f.getvalue())
-        self.assertEqual("You currently have 60 points.\n", f.getvalue())
+        self.assertEqual("Player Anonymous currently have 60 points.\n", f.getvalue())
     
     def testPrintCard(self):
-        pass
+        card = Card('6', 'Hearts')
+        self.assertEqual(str(GraphicDecorator(card)), "\n".join(
+            [
+                '┌────────┐',
+                '│6       │',
+                '│        │',
+                '│   ♥    │',
+                '│        │',
+                '│      6 │',
+                '└────────┘'
+            ]
+        ))
 if __name__ == "__main__":
     unittest.main()

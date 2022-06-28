@@ -15,21 +15,20 @@ class Round:
         self._roundNumber = 1
     
     def start(self):
-        self._player.card = self._cardset.player_card
-        self._house.card = self._cardset.house_card
+        self._player.card, self._house.card, sign = self._cardset.get_cards()
         print(f'Starting round #{self._roundNumber}...')
+        
         print("The House's card is ", end='')
         self.print_card(self._house)
         
         guess = self.valid_guess()
 
-        print("Your card is ", end='')
+        print(f"{self._player.name}'s card is ", end='')
         self.print_card(self._player)
         
-        if self.show_result(guess):
-            print("You won this round!")
+        if self.show_result(guess, sign):
+            print(f"{self._player.name} won this round!")
             nextRound = self.valid_choice()
-            
             if nextRound == 'Y':
                 self._multi +=1
                 self._roundNumber +=1
@@ -39,10 +38,10 @@ class Round:
                 # add points
                 self._player.score = self._player.score + 20*(2**self._multi)
         else:
-            print("Sorry, you've lost this match!")
+            print(f"Sorry, {self._player.name} lost this round :(")
     
     def valid_guess(self) -> str:
-        prompt = "Type your guess: '>' for greater value and '<' otherwise: "
+        prompt = f"Type {self._player.name}'s guess: '>' for greater value and '<' otherwise: "
         while True:
             try:
                 guess = input(prompt).strip()
@@ -51,6 +50,7 @@ class Round:
                 break
             except InvalidGuessChoice as e:
                 print(e)
+        return guess
     
     def valid_choice(self) -> str:
         while True:
@@ -62,6 +62,7 @@ class Round:
                 break
             except InvalidContinueChoice as e:
                 print(e)
+        return nextRound
 
     def print_card(self, entity: Entity):
         if self._player.showGraphics:
@@ -69,7 +70,6 @@ class Round:
         else:
             print(str(entity.card))
 
-    def show_result(self, guess):
-        sign = self._cardset.sign
+    def show_result(self, guess, sign):
         return (guess == '>' and sign) \
             or (guess == '<' and not sign)

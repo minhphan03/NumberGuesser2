@@ -51,3 +51,7 @@ class Player(Entity):
     def showGraphics(self) -> bool:
         return self._showGraphics
     
+    @property
+    def name(self):
+        return self._name
+    
