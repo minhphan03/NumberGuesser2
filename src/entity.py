@@ -23,9 +23,11 @@ class House(Entity):
 
 
 class Player(Entity):
-    def __init__(self) -> None:
+    def __init__(self, showGraphics=False, name='Anonymous') -> None:
         super().__init__()
+        self._name = name
         self._score = 60
+        self._showGraphics = showGraphics
 
     def result(self) -> bool:
         if self.get_score() < 25:
@@ -44,4 +46,8 @@ class Player(Entity):
     @score.setter
     def score(self, new_score: int):
         self._score = new_score
+    
+    @property
+    def showGraphics(self) -> bool:
+        return self._showGraphics
     

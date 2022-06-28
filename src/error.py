@@ -20,3 +20,11 @@ class InvalidContinueChoice(Error):
     def __str__(self) -> str:
         return f'{self.choice} is an invalid response. {self.message}'
 
+class InvalidNameChoice(Error):
+    def __init__(self, name) -> None:
+        self.message = 'Name not allowed. Type again'
+        self.name = name
+        super().__init__(self.message)
+
+    def __str__(self) -> str:
+        return self.message

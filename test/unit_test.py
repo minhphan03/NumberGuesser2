@@ -32,6 +32,8 @@ class UnitTestMethods(unittest.TestCase):
             match.start()
         # print("test output is", f.getvalue())
         self.assertEqual("You currently have 60 points.\n", f.getvalue())
-
+    
+    def testPrintCard(self):
+        pass
 if __name__ == "__main__":
     unittest.main()
