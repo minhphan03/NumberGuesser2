@@ -1,23 +1,25 @@
+import logging
+
 SUITS = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
 GROUPS = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King']
 SPECIALS = [('Black', 'Joker'), ('Red', 'Joker')]
 
 SUITS_GRAPHIC = {
-    'Spades': '♠', 
+    'Spades': '♠',
     'Diamonds': '♦',
-    'Hearts': '♥', 
+    'Hearts': '♥',
     'Clubs': '♣',
     'Red': 'R',
     'Black': 'B'
 }
 
 GROUPS_GRAPHIC = {
-    'Ace': 'A ', 
-    '2': '2 ', 
+    'Ace': 'A ',
+    '2': '2 ',
     '3': '3 ',
     '4': '4 ',
     '5': '5 ',
-    '6': '6 ', 
+    '6': '6 ',
     '7': '7 ',
     '8': '8 ',
     '9': '9 ',
@@ -27,3 +29,9 @@ GROUPS_GRAPHIC = {
     'King': 'K ',
     'Joker': 'JK'
 }
+
+def log_custom(func):
+    def log_func(*args):
+        logging.info('Running {} with arguments {}'.format(func.__name__, args))
+    return log_func
+

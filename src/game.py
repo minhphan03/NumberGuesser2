@@ -3,12 +3,12 @@ from match import Match
 from error import InvalidNameChoice, InvalidContinueChoice
 import re
 import logging
+from config import log_custom
 
 logger = logging.getLogger(__name__)
 
 class Game:
     def new_game(self):
-        logger.info('Create new player')
         player = self.create_player()
         match = Match(player)
         match.isPlaying = True

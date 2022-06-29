@@ -11,7 +11,6 @@ class Match:
         self.isPlaying = False
 
     def start(self):
-        logger.info('Starting a match')
         print(f"Player {self._player.name} currently have " + str(self._player.score) + " points.")
         round = Round(self._player)
         self._match +=1
@@ -26,4 +25,3 @@ class Match:
             return -1
         else:
             return 0
-        
