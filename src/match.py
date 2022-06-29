@@ -1,5 +1,8 @@
 from round import Round
 from entity import Player
+import logging
+
+logger = logging.getLogger(__name__)
 
 class Match:
     def __init__(self, player: Player) -> None:
@@ -8,6 +11,7 @@ class Match:
         self.isPlaying = False
 
     def start(self):
+        logger.info('Starting a match')
         print(f"Player {self._player.name} currently have " + str(self._player.score) + " points.")
         round = Round(self._player)
         self._match +=1

@@ -1,0 +1,53 @@
+2022-06-29 16:23:46,668     INFO (main.py:17) --- Game Started
+2022-06-29 16:23:46,668     INFO (game.py:11) --- Create new player
+2022-06-29 16:23:54,415     INFO (match.py:14) --- Starting a match
+2022-06-29 16:23:54,415     INFO (round.py:20) --- Starting a new round
+2022-06-29 16:23:57,749     INFO (round.py:28) --- Player entered a guess
+2022-06-29 16:23:57,749     INFO (round.py:33) --- Player won this round
+2022-06-29 16:23:59,782     INFO (round.py:20) --- Starting a new round
+2022-06-29 16:24:01,487     INFO (round.py:28) --- Player entered a guess
+2022-06-29 16:24:01,488     INFO (round.py:33) --- Player won this round
+2022-06-29 16:24:09,590     INFO (match.py:14) --- Starting a match
+2022-06-29 16:24:09,590     INFO (round.py:20) --- Starting a new round
+2022-06-29 16:24:14,664     INFO (round.py:28) --- Player entered a guess
+2022-06-29 16:24:14,664     INFO (round.py:33) --- Player won this round
+2022-06-29 16:24:18,217     INFO (match.py:14) --- Starting a match
+2022-06-29 16:24:18,218     INFO (round.py:20) --- Starting a new round
+2022-06-29 16:24:20,614     INFO (round.py:28) --- Player entered a guess
+2022-06-29 16:24:20,614     INFO (round.py:45) --- Player lost this round
+2022-06-29 16:24:20,614     INFO (match.py:14) --- Starting a match
+2022-06-29 16:24:20,614     INFO (round.py:20) --- Starting a new round
+2022-06-29 16:24:24,560     INFO (round.py:28) --- Player entered a guess
+2022-06-29 16:24:24,560     INFO (round.py:45) --- Player lost this round
+2022-06-29 16:24:24,560     INFO (game.py:22) --- Player loses
+2022-06-29 16:24:24,560     INFO (main.py:20) --- Game ended
+2022-06-29 16:27:17,663     INFO (main.py:17) --- Game Started
+2022-06-29 16:27:17,663     INFO (game.py:11) --- Create new player
+2022-06-29 16:27:20,326    ERROR (game.py:35) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "C:\Users\User\Documents\Internship\guessing_game\src\game.py", line 31, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice: T is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-06-29 16:27:23,595    ERROR (game.py:35) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "C:\Users\User\Documents\Internship\guessing_game\src\game.py", line 31, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice: W is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-06-29 16:27:31,913     INFO (match.py:14) --- Starting a match
+2022-06-29 16:27:31,914     INFO (round.py:20) --- Starting a new round
+2022-06-29 16:27:41,975    ERROR (round.py:58) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "C:\Users\User\Documents\Internship\guessing_game\src\round.py", line 54, in valid_guess
+    raise InvalidGuessChoice(guess)
+error.InvalidGuessChoice: 2 is an invalid response. Type '>' or '<' instead.
+2022-06-29 16:27:44,166     INFO (round.py:28) --- Player entered a guess
+2022-06-29 16:27:44,166     INFO (round.py:45) --- Player lost this round
+2022-06-29 16:27:44,166     INFO (match.py:14) --- Starting a match
+2022-06-29 16:27:44,167     INFO (round.py:20) --- Starting a new round
+2022-06-29 16:27:48,087     INFO (round.py:28) --- Player entered a guess
+2022-06-29 16:27:48,088     INFO (round.py:33) --- Player won this round
+2022-06-29 16:27:50,757     INFO (round.py:20) --- Starting a new round
+2022-06-29 16:27:57,160     INFO (round.py:28) --- Player entered a guess
+2022-06-29 16:27:57,160     INFO (round.py:45) --- Player lost this round
+2022-06-29 16:27:57,160     INFO (game.py:22) --- Player loses
+2022-06-29 16:27:57,160     INFO (main.py:20) --- Game ended

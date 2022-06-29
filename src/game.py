@@ -2,9 +2,13 @@ from entity import Player
 from match import Match
 from error import InvalidNameChoice, InvalidContinueChoice
 import re
+import logging
+
+logger = logging.getLogger(__name__)
 
 class Game:
     def new_game(self):
+        logger.info('Create new player')
         player = self.create_player()
         match = Match(player)
         match.isPlaying = True
@@ -12,8 +16,10 @@ class Game:
             player.score = player.score-25
             match.start()
         if match.result() == 1:
+            logger.info('Player wins')
             print(f'{player.name} is a winner!')
         if match.result() == -1:
+            logger.info('Player loses')
             print(f"{player.name} lost this game :(")
 
     def create_player(self) -> Player:
@@ -26,6 +32,7 @@ class Game:
                 break
             except InvalidContinueChoice as e:
                 print(e)
+                logger.exception('Player typed an invalid response')
         player_graphics = True if showGraphics == 'Y' else False
         
         while True:
@@ -44,6 +51,4 @@ class Game:
             return Player(player_graphics)
         return Player(player_graphics, name)
 
-if __name__ == '__main__':
-    game = Game()
-    game.new_game()
+

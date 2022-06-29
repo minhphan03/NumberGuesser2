@@ -5,7 +5,9 @@ from error import *
 from cardset import CardSet
 from entity import *
 from card import GraphicDecorator
+import logging
 
+logger = logging.getLogger(__name__)
 class Round:
     def __init__(self, player: Player) -> None:
         self._cardset = CardSet()
@@ -15,6 +17,7 @@ class Round:
         self._roundNumber = 1
     
     def start(self):
+        logger.info('Starting a new round')
         self._player.card, self._house.card, sign = self._cardset.get_cards()
         print(f'Starting round #{self._roundNumber}...')
         
@@ -22,11 +25,12 @@ class Round:
         self.print_card(self._house)
         
         guess = self.valid_guess()
-
+        logger.info('Player entered a guess')
         print(f"{self._player.name}'s card is ", end='')
         self.print_card(self._player)
         
         if self.show_result(guess, sign):
+            logger.info('Player won this round')
             print(f"{self._player.name} won this round!")
             nextRound = self.valid_choice()
             if nextRound == 'Y':
@@ -38,6 +42,7 @@ class Round:
                 # add points
                 self._player.score = self._player.score + 20*(2**self._multi)
         else:
+            logger.info('Player lost this round')
             print(f"Sorry, {self._player.name} lost this round :(")
     
     def valid_guess(self) -> str:
@@ -50,6 +55,7 @@ class Round:
                 break
             except InvalidGuessChoice as e:
                 print(e)
+                logger.exception('Player typed an invalid response')
         return guess
     
     def valid_choice(self) -> str:
@@ -62,6 +68,7 @@ class Round:
                 break
             except InvalidContinueChoice as e:
                 print(e)
+                logger.exception('Player typed an invalid response')
         return nextRound
 
     def print_card(self, entity: Entity):
