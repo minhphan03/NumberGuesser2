@@ -203,3 +203,26 @@ error.InvalidGuessChoice: minh is an invalid response. Type '>' or '<' instead.
 2022-06-30 11:01:57,824     INFO (round.py:47) --- Player lost this round
 2022-06-30 11:01:57,826     INFO (game.py:22) --- Player loses
 2022-06-30 11:01:57,830     INFO (main.py:16) --- Game ended
+2022-06-30 11:14:26,141     INFO (main.py:13) --- Game Started
+2022-06-30 11:14:30,760     INFO (round.py:21) --- Starting a new round
+2022-06-30 11:14:32,856     INFO (round.py:29) --- Player entered a guess
+2022-06-30 11:14:32,860     INFO (config.py:35) --- Running show_result with arguments ('<', False)
+2022-06-30 11:14:32,860     INFO (round.py:35) --- Player won this round
+2022-06-30 11:14:35,664     INFO (round.py:21) --- Starting a new round
+2022-06-30 11:14:38,983     INFO (round.py:29) --- Player entered a guess
+2022-06-30 11:14:38,986     INFO (config.py:35) --- Running show_result with arguments ('>', False)
+2022-06-30 11:14:38,987     INFO (round.py:47) --- Player lost this round
+2022-06-30 11:14:38,991     INFO (round.py:21) --- Starting a new round
+2022-06-30 11:14:41,975     INFO (round.py:29) --- Player entered a guess
+2022-06-30 11:14:41,977     INFO (config.py:35) --- Running show_result with arguments ('<', False)
+2022-06-30 11:14:41,978     INFO (round.py:35) --- Player won this round
+2022-06-30 11:14:43,856     INFO (round.py:21) --- Starting a new round
+2022-06-30 11:14:45,527     INFO (round.py:29) --- Player entered a guess
+2022-06-30 11:14:45,530     INFO (config.py:35) --- Running show_result with arguments ('<', False)
+2022-06-30 11:14:45,530     INFO (round.py:35) --- Player won this round
+2022-06-30 11:14:47,863     INFO (round.py:21) --- Starting a new round
+2022-06-30 11:14:49,551     INFO (round.py:29) --- Player entered a guess
+2022-06-30 11:14:49,554     INFO (config.py:35) --- Running show_result with arguments ('<', True)
+2022-06-30 11:14:49,554     INFO (round.py:47) --- Player lost this round
+2022-06-30 11:14:49,555     INFO (game.py:22) --- Player loses
+2022-06-30 11:14:49,556     INFO (main.py:16) --- Game ended
