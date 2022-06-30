@@ -1,6 +1,4 @@
-import random
 from card import Card
-
 
 class Entity:
     def __init__(self) -> None:
@@ -13,6 +11,7 @@ class Entity:
     @card.setter
     def card(self, card:Card):
         self._card = card
+
 
 class House(Entity):
     def __init__(self) -> None:

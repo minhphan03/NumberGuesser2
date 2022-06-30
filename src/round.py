@@ -29,8 +29,8 @@ class Round:
         logger.info('Player entered a guess')
         print(f"{self._player.name}'s card is ", end='')
         self.print_card(self._player)
-        log = log_custom(self.show_result(guess, sign))
-        log()
+        log = log_custom(self.show_result)
+        log(guess, sign)
         if self.show_result(guess, sign):
             logger.info('Player won this round')
             print(f"{self._player.name} won this round!")

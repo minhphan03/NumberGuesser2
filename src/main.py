@@ -6,7 +6,7 @@ logger = logging.getLogger(__name__)
 def main():
     logging.basicConfig(format='%(asctime)s %(levelname)8s' +
                                ' (%(filename)s:%(lineno)s) --- %(message)s',
-                        filename='../log/game.log',
+                        filename='log/game.log',
                         filemode='a',
                         level=logging.INFO)
 
