@@ -1,5 +1,6 @@
 # Number Guessing App
 
+## Rules 
  - There are 02 roles: Player, and House(PC)
  - There is a deck, contains 52 playing cards. There are:
    + 4 Suites: Heart, Diamond, Club, Spade
@@ -20,4 +21,10 @@
  - Game Win/Lose conditions:
     + Player will WIN the game if he has greater than or equal to 1000 points after any match.
     + Player will LOSE the game if he has less than 30 points after any match.
-"		
+
+## Instructions
+1. Download the package: Either clone the repository to a local machine with Python 3.6 or later already installed. 
+2. Open Command Prompt or Terminal and navigate to the src folder.
+3. Type in `python main.py` and let the program compile and interpreted itself.
+4. To exit the game while in progress, hit Ctrl + C (or Command + C on Mac)
+5. For more help, type `python main.py --help`
