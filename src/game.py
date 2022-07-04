@@ -1,3 +1,6 @@
+"""
+Module to define a game object
+"""
 from entity import Player
 from match import Match
 from error import InvalidNameChoice, InvalidContinueChoice
@@ -8,7 +11,13 @@ from config import log_custom
 logger = logging.getLogger(__name__)
 
 class Game:
+    """
+    A class to define a single game
+    """
     def new_game(self):
+        """
+        Initiate a new game
+        """
         player = self.create_player()
         match = Match(player)
         match.isPlaying = True
@@ -23,6 +32,9 @@ class Game:
             print(f"{player.name} lost this game :(")
 
     def create_player(self) -> Player:
+        """
+        Create a new player for an instance of game
+        """
         while True:
             try:
                 prompt = "Show card as graphic? (Y/N) "
