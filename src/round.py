@@ -14,13 +14,9 @@ class Round:
     """
     A round instance makes up one of many of a single match of the game.
     Each round prompts the player to enter the guess and based on the result,
-    will either ask them to continue playing or stop, or end the match if lost
+    will either ask them to continue playing or stop, or end the match if lost.
     """
     def __init__(self, player: Player) -> None:
-        """
-        Initiate the object with a Player instance to keep track of the points
-        of the said player
-        """
         self._cardset = CardSet()
         self._multi = 0
         self._house = House()
@@ -29,7 +25,7 @@ class Round:
     
     def start(self):
         """
-        Start the round, prompt the questions and direct the next rounds 
+        Start a new round, prompt the questions and direct the next rounds 
         of a single match recursively.
         """
         logger.info('Starting a new round')
@@ -100,16 +96,18 @@ class Round:
     def print_card(self, entity: Entity):
         """
         Given the entity (house or player),
-        prints the cards of the round.
+        prints out the card that that entity holds during a single round.
         """
         if self._player.showGraphics:
             print("\n" + str(GraphicDecorator(entity.card)))
         else:
             print(str(entity.card))
 
-    def show_result(self, guess, sign):
+    def show_result(self, guess: str, sign: bool):
         """
-        Checks that whether the player's guess is correct.
+        Given the player's guess and the sign depicting whether the player's card
+        has a larger card value than the house's,
+        checks if the player's guess is correct.
         """
         return (guess == '>' and sign) \
             or (guess == '<' and not sign)

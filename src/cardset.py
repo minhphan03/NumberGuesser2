@@ -1,5 +1,6 @@
 """
 Module to define a cardset for the game
+
 """
 from card import Card
 from config import SPECIALS, SUITS, GROUPS

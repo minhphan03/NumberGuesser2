@@ -1,5 +1,6 @@
 """
-Configuration file, including constants used in other modules
+Configuration file, including constants used in other modules and a general static function
+to the package
 """
 
 import logging

@@ -9,9 +9,6 @@ class Card:
     return properties to help with comparison of a single card.
     """
     def __init__(self, group, suit) -> None:
-        """
-        Define a card object using its group and suit
-        """
         self._suit = suit
         self._group = group
     
@@ -25,7 +22,7 @@ class Card:
 
     def __str__(self) -> str:
         """
-        Print out the details of the card
+        Print out the details of the card in literal strings
         """
         return self._group + " " + self._suit
 
@@ -47,7 +44,7 @@ class GraphicDecorator(Decorator):
     """
     def __str__(self):
         """
-        Prints out the card on the command line
+        Prints out the card in the shape of a card on the command line
         """
         lines = []
         # print a card
