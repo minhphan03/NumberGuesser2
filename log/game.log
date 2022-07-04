@@ -226,3 +226,10 @@ error.InvalidGuessChoice: minh is an invalid response. Type '>' or '<' instead.
 2022-06-30 11:14:49,554     INFO (round.py:47) --- Player lost this round
 2022-06-30 11:14:49,555     INFO (game.py:22) --- Player loses
 2022-06-30 11:14:49,556     INFO (main.py:16) --- Game ended
+2022-07-04 15:52:38,645     INFO (main.py:25) --- Game Started
+2022-07-04 15:52:50,301     INFO (main.py:25) --- Game Started
+2022-07-04 15:53:27,542     INFO (main.py:25) --- Game Started
+2022-07-04 15:53:41,961     INFO (main.py:25) --- Game Started
+2022-07-04 16:07:09,562     INFO (main.py:29) --- Game Started
+2022-07-04 16:07:35,026     INFO (main.py:29) --- Game Started
+2022-07-04 16:09:37,647     INFO (main.py:30) --- Game Started
