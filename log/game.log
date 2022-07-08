@@ -233,3 +233,75 @@ error.InvalidGuessChoice: minh is an invalid response. Type '>' or '<' instead.
 2022-07-04 16:07:09,562     INFO (main.py:29) --- Game Started
 2022-07-04 16:07:35,026     INFO (main.py:29) --- Game Started
 2022-07-04 16:09:37,647     INFO (main.py:30) --- Game Started
+2022-07-08 08:54:08,257     INFO (main.py:30) --- Game Started
+2022-07-08 08:54:16,916     INFO (round.py:31) --- Starting a new round
+2022-07-08 08:54:20,307     INFO (round.py:39) --- Player entered a guess
+2022-07-08 08:54:20,309     INFO (config.py:47) --- Running show_result with arguments ('>', True)
+2022-07-08 08:54:20,310     INFO (round.py:45) --- Player won this round
+2022-07-08 08:54:22,874     INFO (round.py:31) --- Starting a new round
+2022-07-08 08:54:24,427     INFO (round.py:39) --- Player entered a guess
+2022-07-08 08:54:24,429     INFO (config.py:47) --- Running show_result with arguments ('>', True)
+2022-07-08 08:54:24,431     INFO (round.py:45) --- Player won this round
+2022-07-08 08:54:25,794     INFO (round.py:31) --- Starting a new round
+2022-07-08 08:54:27,155     INFO (round.py:39) --- Player entered a guess
+2022-07-08 08:54:27,157     INFO (config.py:47) --- Running show_result with arguments ('<', False)
+2022-07-08 08:54:27,157     INFO (round.py:45) --- Player won this round
+2022-07-08 08:54:28,666     INFO (round.py:31) --- Starting a new round
+2022-07-08 08:54:31,634     INFO (round.py:39) --- Player entered a guess
+2022-07-08 08:54:31,637     INFO (config.py:47) --- Running show_result with arguments ('<', True)
+2022-07-08 08:54:31,637     INFO (round.py:57) --- Player lost this round
+2022-07-08 08:54:31,639     INFO (round.py:31) --- Starting a new round
+2022-07-08 08:54:37,522     INFO (round.py:39) --- Player entered a guess
+2022-07-08 08:54:37,525     INFO (config.py:47) --- Running show_result with arguments ('<', False)
+2022-07-08 08:54:37,526     INFO (round.py:45) --- Player won this round
+2022-07-08 08:54:41,154     INFO (round.py:31) --- Starting a new round
+2022-07-08 08:54:42,675     INFO (round.py:39) --- Player entered a guess
+2022-07-08 08:54:42,678     INFO (config.py:47) --- Running show_result with arguments ('>', True)
+2022-07-08 08:54:42,679     INFO (round.py:45) --- Player won this round
+2022-07-08 08:54:44,548     INFO (round.py:31) --- Starting a new round
+2022-07-08 08:54:52,179    ERROR (round.py:76) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "d:\Projects\guess_game\src\round.py", line 72, in valid_guess
+    raise InvalidGuessChoice(guess)
+error.InvalidGuessChoice: y is an invalid response. Type '>' or '<' instead.
+2022-07-08 08:54:53,299     INFO (round.py:39) --- Player entered a guess
+2022-07-08 08:54:53,301     INFO (config.py:47) --- Running show_result with arguments ('>', True)
+2022-07-08 08:54:53,301     INFO (round.py:45) --- Player won this round
+2022-07-08 08:54:57,914     INFO (round.py:31) --- Starting a new round
+2022-07-08 08:54:59,354     INFO (round.py:39) --- Player entered a guess
+2022-07-08 08:54:59,357     INFO (config.py:47) --- Running show_result with arguments ('<', False)
+2022-07-08 08:54:59,357     INFO (round.py:45) --- Player won this round
+2022-07-08 08:55:01,618     INFO (round.py:31) --- Starting a new round
+2022-07-08 08:55:02,978     INFO (round.py:39) --- Player entered a guess
+2022-07-08 08:55:02,981     INFO (config.py:47) --- Running show_result with arguments ('>', True)
+2022-07-08 08:55:02,981     INFO (round.py:45) --- Player won this round
+2022-07-08 08:55:04,588     INFO (round.py:31) --- Starting a new round
+2022-07-08 08:55:07,323     INFO (round.py:39) --- Player entered a guess
+2022-07-08 08:55:07,325     INFO (config.py:47) --- Running show_result with arguments ('>', False)
+2022-07-08 08:55:07,326     INFO (round.py:57) --- Player lost this round
+2022-07-08 08:55:07,327     INFO (round.py:31) --- Starting a new round
+2022-07-08 08:55:11,122     INFO (round.py:39) --- Player entered a guess
+2022-07-08 08:55:11,125     INFO (config.py:47) --- Running show_result with arguments ('>', True)
+2022-07-08 08:55:11,125     INFO (round.py:45) --- Player won this round
+2022-07-08 08:55:12,795     INFO (round.py:31) --- Starting a new round
+2022-07-08 08:55:16,378     INFO (round.py:39) --- Player entered a guess
+2022-07-08 08:55:16,382     INFO (config.py:47) --- Running show_result with arguments ('<', True)
+2022-07-08 08:55:16,382     INFO (round.py:57) --- Player lost this round
+2022-07-08 08:55:16,383     INFO (round.py:31) --- Starting a new round
+2022-07-08 08:55:18,666     INFO (round.py:39) --- Player entered a guess
+2022-07-08 08:55:18,669     INFO (config.py:47) --- Running show_result with arguments ('<', False)
+2022-07-08 08:55:18,669     INFO (round.py:45) --- Player won this round
+2022-07-08 08:55:21,628     INFO (round.py:31) --- Starting a new round
+2022-07-08 08:55:25,027     INFO (round.py:39) --- Player entered a guess
+2022-07-08 08:55:25,030     INFO (config.py:47) --- Running show_result with arguments ('<', False)
+2022-07-08 08:55:25,030     INFO (round.py:45) --- Player won this round
+2022-07-08 08:55:27,484     INFO (round.py:31) --- Starting a new round
+2022-07-08 08:55:32,362     INFO (round.py:39) --- Player entered a guess
+2022-07-08 08:55:32,364     INFO (config.py:47) --- Running show_result with arguments ('>', True)
+2022-07-08 08:55:32,365     INFO (round.py:45) --- Player won this round
+2022-07-08 08:55:35,061     INFO (round.py:31) --- Starting a new round
+2022-07-08 08:55:36,498     INFO (round.py:39) --- Player entered a guess
+2022-07-08 08:55:36,501     INFO (config.py:47) --- Running show_result with arguments ('>', False)
+2022-07-08 08:55:36,501     INFO (round.py:57) --- Player lost this round
+2022-07-08 08:55:36,503     INFO (game.py:31) --- Player loses
+2022-07-08 08:55:36,504     INFO (main.py:33) --- Game ended
