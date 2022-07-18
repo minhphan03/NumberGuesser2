@@ -31,5 +31,6 @@
 
 ## Instructions Using Docker
 1. Configure and install so that your docker system is operating properly. On how to install Docker, refer to [this instruction for Windows](https://docs.microsoft.com/en-us/windows/wsl/)
-2. Image will be pulled automatically from Docker Hub after typing in `docker image pull minhphan0612/guessinggame`
+2. Image will be pulled automatically from Docker Hub after typing in 
+`docker image pull minhphan0612/guessinggame:2.0` (lastest version). Please only use this version as the first build is failed
 3. Run image using command `docker run -it numberguesser"

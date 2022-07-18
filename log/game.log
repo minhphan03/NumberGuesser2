@@ -320,3 +320,247 @@ error.InvalidGuessChoice: y is an invalid response. Type '>' or '<' instead.
 2022-07-15 13:55:20,610     INFO (round.py:57) --- Player lost this round
 2022-07-15 13:55:20,611     INFO (game.py:31) --- Player loses
 2022-07-15 13:55:20,612     INFO (main.py:33) --- Game ended
+2022-07-18 20:50:10,691     INFO (main.py:30) --- Game Started
+2022-07-18 20:50:11,908    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 20:50:15,060     INFO (round.py:31) --- Starting a new round
+2022-07-18 20:50:22,606     INFO (round.py:39) --- Player entered a guess
+2022-07-18 20:50:22,607     INFO (config.py:47) --- Running show_result with arguments ('<', False)
+2022-07-18 20:50:22,607     INFO (round.py:45) --- Player won this round
+2022-07-18 20:50:23,716    ERROR (round.py:93) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/round.py", line 89, in valid_choice
+    raise InvalidContinueChoice(nextRound)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 20:50:24,307    ERROR (round.py:93) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/round.py", line 89, in valid_choice
+    raise InvalidContinueChoice(nextRound)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 20:50:24,498    ERROR (round.py:93) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/round.py", line 89, in valid_choice
+    raise InvalidContinueChoice(nextRound)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 20:50:24,685    ERROR (round.py:93) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/round.py", line 89, in valid_choice
+    raise InvalidContinueChoice(nextRound)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 20:50:25,579    ERROR (round.py:93) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/round.py", line 89, in valid_choice
+    raise InvalidContinueChoice(nextRound)
+error.InvalidContinueChoice: > is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 20:50:26,824    ERROR (round.py:93) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/round.py", line 89, in valid_choice
+    raise InvalidContinueChoice(nextRound)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 20:50:26,976    ERROR (round.py:93) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/round.py", line 89, in valid_choice
+    raise InvalidContinueChoice(nextRound)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 20:50:28,050    ERROR (round.py:93) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/round.py", line 89, in valid_choice
+    raise InvalidContinueChoice(nextRound)
+error.InvalidContinueChoice: < is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 20:50:28,679    ERROR (round.py:93) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/round.py", line 89, in valid_choice
+    raise InvalidContinueChoice(nextRound)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 20:50:29,053    ERROR (round.py:93) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/round.py", line 89, in valid_choice
+    raise InvalidContinueChoice(nextRound)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 20:50:29,951    ERROR (round.py:93) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/round.py", line 89, in valid_choice
+    raise InvalidContinueChoice(nextRound)
+error.InvalidContinueChoice: < is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 20:50:30,309    ERROR (round.py:93) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/round.py", line 89, in valid_choice
+    raise InvalidContinueChoice(nextRound)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 20:50:30,513    ERROR (round.py:93) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/round.py", line 89, in valid_choice
+    raise InvalidContinueChoice(nextRound)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 20:50:32,693     INFO (round.py:31) --- Starting a new round
+2022-07-18 20:54:51,718     INFO (main.py:30) --- Game Started
+2022-07-18 20:54:53,632    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice: Exit is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 20:54:58,641    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 20:55:00,379    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice: Exit is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 20:55:03,321    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice: Exit is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 20:55:04,348    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice: Quit is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 20:56:16,896    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice: Quit is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 20:56:49,609    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice: oq is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 20:56:52,820    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice: oqoq is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:11,821     INFO (main.py:30) --- Game Started
+2022-07-18 21:00:12,888    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:14,955    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:15,183    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:17,803    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice: [b is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:19,832    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice: [a is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:21,775    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice: [c is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:22,037    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice: [?1;2c is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:23,230    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice: [d is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:23,418    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:23,647    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:24,266    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:24,489    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:24,695    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:24,882    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:27,961    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice: [b[b[b[b is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:28,543    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:28,739    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:28,918    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:29,113    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:29,312    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:30,126    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:31,790    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice: 1 is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:00:34,369     INFO (round.py:31) --- Starting a new round
+2022-07-18 21:01:29,870     INFO (main.py:30) --- Game Started
+2022-07-18 21:01:36,872     INFO (round.py:31) --- Starting a new round
+2022-07-18 21:02:05,072     INFO (main.py:30) --- Game Started
+2022-07-18 21:02:09,595     INFO (round.py:31) --- Starting a new round
+2022-07-18 21:02:25,957     INFO (main.py:30) --- Game Started
+2022-07-18 21:02:26,919    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice:  is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
+2022-07-18 21:02:30,331    ERROR (game.py:47) --- Player typed an invalid response
+Traceback (most recent call last):
+  File "/Users/minhphan/Documents/NumberGuesser2/src/game.py", line 43, in create_player
+    raise InvalidContinueChoice(showGraphics)
+error.InvalidContinueChoice: A a is an invalid response. Type 'Y' (Yes) or 'N' (No) to continue.
