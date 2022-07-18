@@ -22,9 +22,14 @@
     + Player will WIN the game if he has greater than or equal to 1000 points after any match.
     + Player will LOSE the game if he has less than 30 points after any match.
 
-## Instructions
+## Instructions Using Package
 1. Download the package: Either clone the repository to a local machine with Python 3.6 or later already installed. 
 2. Open Command Prompt or Terminal and navigate to the src folder.
 3. Type in `python main.py` and let the program compile and interpreted itself.
 4. To exit the game while in progress, hit Ctrl + C (or Command + C on Mac)
 5. For more help, type `python main.py --help`
+
+## Instructions Using Docker
+1. Configure and install so that your docker system is operating properly. On how to install Docker, refer to [this instruction for Windows](https://docs.microsoft.com/en-us/windows/wsl/)
+2. Image will be pulled automatically from Docker Hub after typing in `docker image pull minhphan0612/guessinggame`
+3. Run image using command `docker run -it numberguesser"

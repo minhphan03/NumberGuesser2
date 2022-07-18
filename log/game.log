@@ -305,3 +305,18 @@ error.InvalidGuessChoice: y is an invalid response. Type '>' or '<' instead.
 2022-07-08 08:55:36,501     INFO (round.py:57) --- Player lost this round
 2022-07-08 08:55:36,503     INFO (game.py:31) --- Player loses
 2022-07-08 08:55:36,504     INFO (main.py:33) --- Game ended
+2022-07-15 13:55:10,923     INFO (main.py:30) --- Game Started
+2022-07-15 13:55:14,888     INFO (round.py:31) --- Starting a new round
+2022-07-15 13:55:16,745     INFO (round.py:39) --- Player entered a guess
+2022-07-15 13:55:16,749     INFO (config.py:47) --- Running show_result with arguments ('<', True)
+2022-07-15 13:55:16,749     INFO (round.py:57) --- Player lost this round
+2022-07-15 13:55:16,751     INFO (round.py:31) --- Starting a new round
+2022-07-15 13:55:17,740     INFO (round.py:39) --- Player entered a guess
+2022-07-15 13:55:17,744     INFO (config.py:47) --- Running show_result with arguments ('>', True)
+2022-07-15 13:55:17,744     INFO (round.py:45) --- Player won this round
+2022-07-15 13:55:19,445     INFO (round.py:31) --- Starting a new round
+2022-07-15 13:55:20,606     INFO (round.py:39) --- Player entered a guess
+2022-07-15 13:55:20,609     INFO (config.py:47) --- Running show_result with arguments ('<', True)
+2022-07-15 13:55:20,610     INFO (round.py:57) --- Player lost this round
+2022-07-15 13:55:20,611     INFO (game.py:31) --- Player loses
+2022-07-15 13:55:20,612     INFO (main.py:33) --- Game ended
